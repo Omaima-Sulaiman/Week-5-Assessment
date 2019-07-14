@@ -12,11 +12,12 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
+function hello(name) {
   // WRITE YOUR CODE UNDER THIS LINE  
-
+ return Hello + ""+name
 }
-
+hello( );
+console.log (hello())
 
 /* Q2:
 Create a function called calculateTax
@@ -32,9 +33,11 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
+function calculateTax(num , tax) {
   // WRITE YOUR CODE UNDER THIS LINE 
+// I DONT HAVE IDEA HOW I CAN CALULATE TAX ,MY MIND CLOSED  
 
+  return tax ;
 }
 
 
@@ -52,9 +55,18 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function repeatChar(str , num) {
+  // WRITE YOUR CODE UNDER THIS LINE
+       
+var output = "";
 
+while (   num !== 0    ){
+
+output = str.toUppercase + ", " + output.toLowerCase
+
+num--
+{
+  return output ;
 }
 
 
@@ -72,9 +84,14 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function stringToCapital(str) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+  if (str.length ===0)
+         
+return '';
+
+
+return str[str.toUppercase()]   + stringToCapital(str[str.length()-1])
 
 }
-
-// Good luck :)
+// Good luck :
